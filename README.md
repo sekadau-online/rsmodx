@@ -18,3 +18,7 @@ cargo run -- decision-tree
 
 # Web API
 cargo run -- server
+
+curl -X POST http://localhost:3030/predict \
+  -H "Content-Type: application/json" \
+  -d '{"features": [1.0, 2.0, 3.0]}'
